@@ -2,7 +2,6 @@
 
 class DbConnection
 {
-
     public $host;
     public $user;
     public $password;
@@ -36,7 +35,7 @@ class DbConnection
 
 
 
-// $db = new DbConnection('127.0.0.1', 'root', '', 'workshop7');
-// $query = "SELECT * FROM students LIMIT 2";
-// $result = $db->getMySQLConnection()->query($query);
-// print_r($result->fetch_all());
+$db = new DbConnection('127.0.0.1', 'root', '', 'news_proyect');
+$query = "SELECT * FROM users";
+$result = $db->getMySQLConnection()->query($query);
+print_r($result->fetch_all());
