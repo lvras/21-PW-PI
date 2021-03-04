@@ -1,5 +1,5 @@
 <?php
-include("./includes/header.php");
+include("../includes/header.php");
 ?>
 <section>
     <div class="container mt-5">
@@ -32,4 +32,4 @@ include("./includes/header.php");
         </div>
     </div>
 </section>
-<?php include("./includes/footer.php")?>
+<?php include("../includes/footer.php")?>
