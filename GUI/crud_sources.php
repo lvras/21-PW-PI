@@ -25,7 +25,8 @@ include("../includes/header.php");
                 </div>
                 <div class="form-group">
                     <div class="col-lg-4 justify-content-start">
-                        <button class="btn btn-lg btn-info btn-block text-uppercase mt-5" type="submit">Agregar Nuevo</button>
+                    <hr class=" mt-5">
+                        <button class="btn btn-lg btn-info btn-block text-uppercase mt-2" type="submit">Agregar Nuevo</button>
                     </div>
                 </div>
             </form>
