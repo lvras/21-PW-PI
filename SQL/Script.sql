@@ -5,21 +5,24 @@ USE news;
 CREATE TABLE roles(
     id INT(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE categories(
     id INT(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     PRIMARY KEY(id)
 );
-/* cambiar tabla de usuarios FALTO CONTRA */
+
 CREATE TABLE users(
     id INT(11) NOT NULL AUTO_INCREMENT,
-    email VARCHAR(40) NOT NULL,
-    password VARCHAR(40) NOT NULL,
+    email VARCHAR(250) NOT NULL,
+    password VARCHAR(45) NOT NULL,
     first_name VARCHAR(40) NOT NULL,
     last_name VARCHAR(40) NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     id_role INT(11) NOT NULL,
     PRIMARY KEY(id),
     FOREIGN KEY(id_role) REFERENCES roles(id)
@@ -27,8 +30,9 @@ CREATE TABLE users(
 
 CREATE TABLE news_sources(
     id INT(11) NOT NULL AUTO_INCREMENT,
-    url VARCHAR(300) NOT NULL,
-    name VARCHAR(60) NOT NULL,
+    url VARCHAR(2000) NOT NULL,
+    name VARCHAR(80) NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     id_category INT(11) NOT NULL,
     id_user INT(11) NOT NULL,
     PRIMARY KEY(id),
@@ -38,10 +42,11 @@ CREATE TABLE news_sources(
 
 CREATE TABLE news(
     id INT(11) NOT NULL AUTO_INCREMENT,
-    title VARCHAR(30) NOT NULL,
-    short_description VARCHAR(100) NOT NULL,
-    permanlink VARCHAR(300) NOT NULL,
+    title VARCHAR(40) NOT NULL,
+    short_description VARCHAR(200) NOT NULL,
+    permanlink VARCHAR(2000) NOT NULL,
     date TIMESTAMP NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     id_news_source INT(11) NOT NULL,
     id_user INT(11) NOT NULL,
     id_category INT(11) NOT NULL,
