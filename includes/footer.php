@@ -7,19 +7,19 @@
 <footer class="bg-info text-center text-white mt-5">
   <div class="container p-4 pb-0">
     <section class="mb-2">
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/lvrascr" role="button"
         ><i class="fab fa-twitter"></i
       ></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="index.php" role="button"
         ><i class="fas fa-home"></i
       ></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/lvras" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>
   </div>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright: lvras - Luis Guerrero
+    lvras - Luis Guerrero
   </div>
 </footer>
 </html>

@@ -13,10 +13,11 @@ CREATE TABLE categories(
     name VARCHAR(30) NOT NULL,
     PRIMARY KEY(id)
 );
-
+/* cambiar tabla de usuarios FALTO CONTRA */
 CREATE TABLE users(
     id INT(11) NOT NULL AUTO_INCREMENT,
     email VARCHAR(40) NOT NULL,
+    password VARCHAR(40) NOT NULL,
     first_name VARCHAR(40) NOT NULL,
     last_name VARCHAR(40) NOT NULL,
     id_role INT(11) NOT NULL,

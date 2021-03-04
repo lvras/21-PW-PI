@@ -12,8 +12,7 @@ include("./includes/header.php");
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h2 class="card-title text-center">Inicio de sesion</h2>
-                        <!-- <hr class="my-4"> -->
-                        <form class="form-signin mt-5" method="POST">
+                        <form class="form-signin mt-5" method="POST" action="">
                             <div class="form-label-group">
                                 <input type="email" name="email" class="form-control" placeholder="Email" required autofocus>
                             </div>
@@ -22,7 +21,7 @@ include("./includes/header.php");
                             </div>
                             <button class="btn btn-lg btn-info btn-block text-uppercase mt-4" type="submit">Iniciar sesion</button>
                             <hr class="my-4">
-                            <a href="#">No tienes cuenta? Create una ahora</a>
+                            <a href="register.php">No tienes cuenta? Crear una ahora</a>
                         </form>
                     </div>
                 </div
