@@ -14,7 +14,7 @@ include("../includes/header.php");
                     <input type="text" name="name" class="form-control" placeholder="Nombre" required autofocus>
                 </div>
                 <div class="form-group">
-                    <div class="col-4 justify-content-start pt-5">
+                    <div class="col-lg-4 justify-content-start pt-5">
                     <hr class=" mt-5">
                         <button class="btn btn-lg btn-info btn-block text-uppercase mt-2"type="submit">Agregar Nuevo</button>
                     </div>

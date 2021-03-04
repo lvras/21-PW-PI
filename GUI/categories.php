@@ -21,7 +21,7 @@ include("../includes/header.php");
                 ?>
                 </tbody>
             </table>
-            <div class="col-3 justify-content-start pt-2">
+            <div class="col-lg-3 justify-content-start pt-2">
                 <button class="btn btn-lg btn-info btn-block text-uppercase mt-5" type="submit">Agregar Nuevo</button>
             </div>
         </div>

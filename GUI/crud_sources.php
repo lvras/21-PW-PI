@@ -24,7 +24,7 @@ include("../includes/header.php");
                     </select>
                 </div>
                 <div class="form-group">
-                    <div class="col-4 justify-content-start">
+                    <div class="col-lg-4 justify-content-start">
                         <button class="btn btn-lg btn-info btn-block text-uppercase mt-5" type="submit">Agregar Nuevo</button>
                     </div>
                 </div>
