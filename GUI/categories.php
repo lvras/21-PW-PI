@@ -1,18 +1,16 @@
 <?php
 
 
-
 include("../includes/header.php");
 ?>
 <div class="container mt-5">
     <div class="row justify-content-around">
         <div class="col-10">
-            <h2>Recursos de Noticias</h2>
+            <h2>Categorias</h2>
             <hr class="my-4">
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Nombre</th>
                         <th>Categoria</th>
                         <th>Acciones</th>
                     </tr>
