@@ -2,7 +2,7 @@
 include("../includes/header.php");
 ?>
 <section>
-    <div class="container mt-5">
+    <div class="container mt-3 mb-3">
         <div class="row">
         <div class="col-sm-9 col-md-7 col-lg-7 mx-auto">
                 <div class="card card-signin my-5">
@@ -11,7 +11,7 @@ include("../includes/header.php");
                         <hr class="my-4">
                         <form class="pt-3" method="POST" action="">
                             <div class="form-group">
-                                <input type="text" name="first_name" class="form-control" placeholder="Nombre" required>
+                                <input type="text" name="first_name" class="form-control" placeholder="Nombre" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" name="last_name" class="form-control" placeholder="Apellido" required>
