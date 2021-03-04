@@ -9,7 +9,7 @@ html, body {
 }
 
 #wrap {
-    padding: 10px;
+    /* padding: 10px; */
     min-height: -webkit-calc(100% - 100px);     /* Chrome */
     min-height: -moz-calc(100% - 100px);     /* Firefox */
     min-height: calc(100% - 100px);     /* native */
