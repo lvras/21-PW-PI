@@ -17,7 +17,9 @@ include("../includes/header.php");
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
-                        <?php session_unset(); } ?>
+                        <?php
+                        unset($_SESSION['message']);
+                        unset($_SESSION['message_type']); } ?>
                         <form class="pt-3" method="POST" action="../DAO/register_user.php">
                             <div class="form-group">
                                 <input type="text" name="first_name" class="form-control" placeholder="Nombre" required autofocus>

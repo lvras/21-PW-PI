@@ -34,7 +34,9 @@ include("../includes/header.php");
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
-                        <?php session_unset(); } ?>
+                        <?php
+                        unset($_SESSION['message']);
+                        unset($_SESSION['message_type']); } ?>
                         <form class="form-signin mt-5" method="POST" action="../DAO/bd_login.php">
                             <div class="form-label-group">
                                 <input type="email" name="email" class="form-control" placeholder="Email" required autofocus>

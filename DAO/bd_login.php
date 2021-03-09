@@ -7,7 +7,7 @@ if(isset($_POST['login'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password' and enabled = true";
     $result = $db->getMySQLConnection()->query($query);
     $row = mysqli_fetch_array($result);
     if($row == true){

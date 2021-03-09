@@ -15,7 +15,7 @@
 <div id="wrap">
     <nav class="navbar navbar-info bg-light">
         <div class="container">
-            <a href="index.php" class="navbar-brand">
+            <a href="news.php" class="navbar-brand">
             <img src="../img/logo.png" width="40" height="40" alt="">
             </a>
             <a href="#" class="navbar-brand btn btn-info">LOGOUT</a>
