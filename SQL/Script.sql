@@ -56,3 +56,5 @@ CREATE TABLE news(
     FOREIGN KEY(id_category) REFERENCES categories(id)
 );
 
+INSERT INTO roles(name, enabled) VALUES('Administrador', true);
+INSERT INTO roles(name, enabled) VALUES('Usuario', true);
