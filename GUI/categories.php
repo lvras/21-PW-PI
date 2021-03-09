@@ -3,8 +3,8 @@ session_start();
 if(!isset($_SESSION['rol'])){
     header("Location: ../GUI/login.php");
 } else {
-    if($_SESSION['rol'] != 2){
-        header("Location: ../GUI/login.php");
+    if($_SESSION['rol'] != 1){
+        header("Location: ../GUI/news.php");
     }
 }
 include("../includes/header.php");
