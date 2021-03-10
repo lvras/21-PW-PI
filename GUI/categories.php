@@ -15,6 +15,7 @@ include("../includes/header.php");
     <div class="row justify-content-around">
         <div class="col-10">
             <h2>Categorias</h2>
+            <hr class="my-4">
             <?php if(isset($_SESSION['message'])) {?>
                 <div class="alert alert-<?=$_SESSION['message_type']?> alert-dismissible fade show" role="alert">
                 <?= $_SESSION['message'] ?>
@@ -25,7 +26,6 @@ include("../includes/header.php");
             <?php
             unset($_SESSION['message']);
             unset($_SESSION['message_type']); } ?>
-            <hr class="my-4">
             <table class="table table-bordered">
                 <thead>
                     <tr>

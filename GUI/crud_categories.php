@@ -2,7 +2,6 @@
 session_start();
 include("../DAO/Connection.php");
 $db = new DbConnection('127.0.0.1', 'root', '', 'news_proyect');
-
 if(!isset($_SESSION['rol'])){
     header("Location: ../GUI/login.php");
 } else {

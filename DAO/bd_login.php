@@ -11,6 +11,8 @@ if(isset($_POST['login'])){
     $result = $db->getMySQLConnection()->query($query);
     $row = mysqli_fetch_array($result);
     if($row == true){
+        $id_user = $row['id'];
+        $_SESSION['id_user'] = $id_user;
         $rol = $row['id_role'];
         $_SESSION['rol'] = $rol;
         switch($_SESSION['rol']){
