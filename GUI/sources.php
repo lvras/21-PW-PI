@@ -41,8 +41,8 @@ include("../includes/header.php");
                     $result = $db->getMySQLConnection()->query($query);
                     while($row = mysqli_fetch_array($result)){ ?>
                         <tr>
-                            <td> <?php echo $row['name'] ?></td>
-                            <td> <?php echo $row['category'] ?></td>
+                            <td> <?php echo $row[2] ?></td>
+                            <td> <?php echo $row[7] ?></td>
                             <td>
                                 <a href="crud_sources.php?id=<?php echo $row['id']?>" class="btn btn-secondary"><i class="fas fa-marker"></i></a>
                                 <a href="../DAO/bd_sources.php?id=<?php echo $row['id']?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
