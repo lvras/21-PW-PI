@@ -30,11 +30,13 @@ session_start();
                 <?php if($_SESSION['rol'] == 1){ ?>
                     <a class="dropdown-item" href="categories.php">Categorias</a>
                     <a class="dropdown-item" href="#">Actualizar noticias</a>
-                <?php } else { ?>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.php?out=-1">Cerrar sesion</a>
+                <?php } else if ($_SESSION['rol'] == 2){ ?>
                     <a class="dropdown-item" href="sources.php">Recursos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.php?out=-1">Cerrar sesion</a>
                 <?php } ?>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.php?out=-1">Cerrar sesion</a>
             </div>
             </div>
         </div>

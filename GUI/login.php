@@ -7,15 +7,7 @@ if(isset($_GET['out'])){
 }
 
 if(isset($_SESSION['rol'])){
-    switch($_SESSION['rol']){
-        case 1:
-            header("location: ../GUI/categories.php");
-        break;
-        case 2:
-            // header('location: prueba.php');
-            break;
-        default:
-    }
+    header("location: ../GUI/index.php");
 }
 
 include("../includes/header.php");
