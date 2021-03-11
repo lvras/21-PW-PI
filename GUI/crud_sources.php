@@ -45,9 +45,17 @@ include("../includes/header.php");
                             </div>
                             <div class="form-group">
                                 <select class="form-control" name="category" aria-label="Default select example">
-                                    <option selected disable>Seleccione una categoria</option>
                                     <?php
-                                    ?>
+                                    $id_category = $row['id_category'];
+                                    $query = "SELECT * FROM categories";
+                                    $result = $db->getMySQLConnection()->query($query);
+                                    while($row = mysqli_fetch_array($result)){
+                                        if($row['id'] == $id_category){?>
+                                            <option value="<?php echo $row['id']?>"selected><?php echo $row['name']?></option>
+                                        <?php } else { ?>
+                                            <option value="<?php echo $row['id']?>"><?php echo $row['name']?></option>
+                                        <?php } ?>
+                                    <?php } ?>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -65,11 +73,11 @@ include("../includes/header.php");
                                 <input type="text" name="name" class="form-control" placeholder="Nombre" required autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="url" class="form-control" placeholder="RSS URLS" required>
+                                <input type="text" name="url" class="form-control" placeholder="RSS URL" required>
                             </div>
                             <div class="form-group">
                                 <select class="form-control" name="category" aria-label="Default select example">
-                                    <option selected disable>Seleccione una categoria</option>
+                                    <option selected disabled>Seleccione una categoria</option>
                                     <?php
                                     $query = "SELECT * FROM categories";
                                     $result = $db->getMySQLConnection()->query($query);

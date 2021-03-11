@@ -44,8 +44,8 @@ include("../includes/header.php");
                             <td> <?php echo $row[2] ?></td>
                             <td> <?php echo $row[7] ?></td>
                             <td>
-                                <a href="crud_sources.php?id=<?php echo $row['id']?>" class="btn btn-secondary"><i class="fas fa-marker"></i></a>
-                                <a href="../DAO/bd_sources.php?id=<?php echo $row['id']?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
+                                <a href="crud_sources.php?id=<?php echo $row[0]?>" class="btn btn-secondary"><i class="fas fa-marker"></i></a>
+                                <a href="../DAO/bd_source.php?id=<?php echo $row[0]?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
                             </td>
                         </tr>
                     <?php } ?>

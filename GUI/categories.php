@@ -6,7 +6,7 @@ if(!isset($_SESSION['rol'])){
     header("Location: ../GUI/login.php");
 } else {
     if($_SESSION['rol'] != 1){
-        header("Location: ../GUI/news.php");
+        header("Location: ../GUI/index.php");
     }
 }
 include("../includes/header.php");
