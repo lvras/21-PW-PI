@@ -17,10 +17,19 @@ if(isset($_POST['login'])){
         $_SESSION['rol'] = $rol;
         switch($_SESSION['rol']){
             case 1:
-                header("location: ../GUI/categories.php");
+                header("location: ../GUI/index.php");
                 break;
             case 2:
-                header("location: ../GUI/sources.php");
+                $query = "SELECT * FROM news_sources WHERE id_user = '$id_user'";
+                $result = $db->getMySQLConnection()->query($query);
+                $row = mysqli_fetch_array($result);
+                if(!$row){
+                    $_SESSION['message'] = 'Debe agregar recursos';
+                    $_SESSION['message_type'] = 'warning';
+                    header("location: ../GUI/sources.php");
+                } else {
+                    header("location: ../GUI/index.php");
+                }
                 break;
             default:
         }

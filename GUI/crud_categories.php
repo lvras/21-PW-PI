@@ -9,6 +9,7 @@ if(!isset($_SESSION['rol'])){
         header("Location: ../GUI/index.php");
     }
 }
+
 include("../includes/header.php");
 ?>
 <div class="container mt-5">
