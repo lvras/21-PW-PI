@@ -57,4 +57,4 @@ CREATE TABLE news(
 );
 
 INSERT INTO roles(name, enabled) VALUES('Administrador', true);
-INSERT INTO roles(name, enabled) VALUES('Usuario', true);
+INSERT INTO roles(name, enabled) VALUES('User', true);
