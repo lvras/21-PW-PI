@@ -29,7 +29,7 @@ session_start();
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <?php if($_SESSION['rol'] == 1){ ?>
                     <a class="dropdown-item" href="categories.php">Categorias</a>
-                    <a class="dropdown-item" href="#">Actualizar noticias</a>
+                    <a class="dropdown-item" href="../DAO/updateNews.php">Actualizar noticias</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="login.php?out=-1">Cerrar sesion</a>
                 <?php } else if ($_SESSION['rol'] == 2){ ?>

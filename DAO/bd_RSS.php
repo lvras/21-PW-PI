@@ -18,6 +18,9 @@ function ReedNews($feedURL, $id_news_source, $id_user, $id_category){
         $stringCut = substr($description, 0, 200);
         $description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';
         $description = str_replace('"', " ", $description);
+        $description = str_replace("'", " ", $description);
+        $title = str_replace("'", "", $title);
+        $title = str_replace('"', "", $title);
         }
         if ($i < 10) { // extrae solo 10 items
             $query = "INSERT INTO news(title, short_description, permanlink, date, enabled, id_news_source, id_user, id_category) VALUES('$title', '$description', '$link', '$dateF', true, '$id_news_source', '$id_user', '$id_category')";
